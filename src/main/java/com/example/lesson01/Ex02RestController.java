@@ -48,6 +48,8 @@ public class Ex02RestController {
 		
 		
 		
+		
+		
 		//400 : bad request 파라미터가 불일치
 		//403 : method 불일치
 		//404 : page not found
