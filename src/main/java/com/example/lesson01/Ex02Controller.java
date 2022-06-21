@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class Ex02Controller {
 	
 	//http://localhost/lesson/ex02/1
+	
+	//@Controller + ResponseBody => MessageConverter 클래스 -> jackson 라이브러리
+	
 	@RequestMapping("/lesson/ex02/1")
 	public String ex02_1() {
 		//@ResponseBody가 아닌 상태로 String을 리턴하면
