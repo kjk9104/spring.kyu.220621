@@ -7,7 +7,8 @@ public class Review {
 	private String storeName;
 	private String menu;
 	private String userName;
-	private double decimal;
+	private double point;
+	private String review;
 	private Date createdAt;
 	private Date updatedAt;
 	
@@ -35,11 +36,11 @@ public class Review {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public double getDecimal() {
-		return decimal;
+	public double getpoint() {
+		return point;
 	}
-	public void setDecimal(double decimal) {
-		this.decimal = decimal;
+	public void setpoint(double point) {
+		this.point = point;
 	}
 	public Date getCreatedAt() {
 		return createdAt;
@@ -52,6 +53,12 @@ public class Review {
 	}
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
+	}
+	public String getReview() {
+		return review;
+	}
+	public void setReview(String review) {
+		this.review = review;
 	}
 	
 	
