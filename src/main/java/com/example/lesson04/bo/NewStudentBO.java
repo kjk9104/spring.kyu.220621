@@ -13,7 +13,12 @@ public class NewStudentBO {
 	@Autowired
 	private NewStudentDAO newStudentDAO;
 	
-	public NewStudent getLastNewUser() {
-		return newStudentDAO.selectNewStudent();
+	public void addNewStudent(NewStudent newStudent) {
+		newStudentDAO.insertNewStudent(newStudent);
 	}
+	
+	public NewStudent getStudentById(int id) {
+		return newStudentDAO.selectStudentById(id);
+	}
+
 }
