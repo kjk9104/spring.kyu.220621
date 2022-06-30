@@ -1,9 +1,12 @@
 package com.example.lesson04.dao;
 
-import com.example.lesson04.model.NewUser;
+import org.springframework.stereotype.Repository;
 
+import com.example.lesson04.model.NewStudent;
+
+@Repository
 public interface NewStudentDAO {
 
-	public NewUser selectLastNewUser();
+	public NewStudent selectNewStudent();
 
 }

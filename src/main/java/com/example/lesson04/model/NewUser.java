@@ -3,6 +3,7 @@ package com.example.lesson04.model;
 import java.util.Date;
 
 public class NewUser {
+	
 	private int id;
 	private String name;
 	private String yyyymmdd;

@@ -13,13 +13,13 @@ import com.example.lesson04.model.NewStudent;
 public class NewStudentController {
 	
 	// http://localhost/lesson04/add_student_view
-	@GetMapping("add_student_view")
+	@GetMapping("/add_student_view")
 	public String addStudentView() {
 		return "lesson04/addStudentView"; // 학생 추가 view 화면
 	}
 	
 	// http://localhost/lesson04/add_student
-	@PostMapping("add_student")
+	@PostMapping("/add_student")
 	public String addStudent(
 			@ModelAttribute NewStudent newStudent) { // 태그에서 name속성에서 일치하는 필드에 값이 들어간다.
 		
