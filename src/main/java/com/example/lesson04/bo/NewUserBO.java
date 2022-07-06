@@ -19,4 +19,9 @@ public class NewUserBO {
 	public NewUser getLastNewUser() {
 		return newUserDAO.selectLastNewUser();
 	}
+
+	public void addNewUser(String name, String yyyymmdd, String email, String introduce) {
+		newUserDAO.insertNewUser(name, yyyymmdd, email, introduce);
+		
+	}
 }
