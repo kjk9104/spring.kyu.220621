@@ -36,7 +36,6 @@ public class Lesson06Ex02Controller {
 		// db select  new_user테이블
 		boolean isDuplication = newUserBO.existNewUserByName(name);
 		
-		
 		Map<String , Boolean> result = new HashMap<>();
 		result.put("is_duplication", isDuplication);
 		
