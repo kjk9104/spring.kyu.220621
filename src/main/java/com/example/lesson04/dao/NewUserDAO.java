@@ -16,4 +16,6 @@ public interface NewUserDAO {
 			@Param("yyyymmdd")String yyyymmdd, 
 			@Param("email")String email, 
 			@Param("introduce")String introduce);
+	
+	public boolean existNewUserByName(String name);
 }

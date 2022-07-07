@@ -24,4 +24,7 @@ public class NewUserBO {
 		newUserDAO.insertNewUser(name, yyyymmdd, email, introduce);
 		
 	}
+	public boolean existNewUserByName(String name) {
+		return newUserDAO.existNewUserByName(name);
+	}
 }
